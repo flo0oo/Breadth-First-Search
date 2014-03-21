@@ -6,9 +6,7 @@ Built for the Artificial Intelligence module @ Greenwich School of Management, M
 
 
 ### Operating
-chmod +x bfs_gui.py
-./bfs_gui.py
+chmod +x bfs_gui.py && ./bfs_gui.py
 
 ### OR FOR CLI
-chmod+x bfs.py
-./bfs.py
+chmod+x bfs.py && ./bfs.py
