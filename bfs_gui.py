@@ -3,7 +3,7 @@
 """
 	MARCUS HASLAM @ SOMEWHERE IN LONDON, UK... 
 	GSOM :>>> ~ ARTIFICIAL INTELLIGENCE MODULE @ 21/3/14
-	DO WHATEVER YOU WANT WITH THIS CODE
+	DO WHATEVER YOU WANT WITH THIS CODE 
 """
 import simpleguitk as simplegui 
 
@@ -149,7 +149,6 @@ def step():
 			elif node.colour == 'black':
 				node.set_colour('visited')
 		current = queue.pop(0)
-		lbl_queue.set_text('QUEUE: ' + str(queue))
 		lbl_current.set_text('CURRENT: ' + str(current + 1))
 		node_list[current].set_colour('current')
 
@@ -161,6 +160,7 @@ def step():
 				node_list[child].set_colour('active')
 				if child not in discarded:
 					queue.append(child)
+					lbl_queue.set_text('QUEUE: ' + str(queue))
 				if current not in discarded:
 					discarded.append(current)
 	else:
